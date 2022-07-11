@@ -1,0 +1,856 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TokenLite Documentation">
+      
+      
+      
+        <meta name="author" content="Softnio">
+      
+      
+        <link rel="canonical" href="https://docs.tokenlite.net/installation.html">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Installation - TokenLite</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/custom.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unzip-the-application" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="TokenLite" class="md-header__button md-logo" aria-label="TokenLite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TokenLite
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="TokenLite" class="md-nav__button md-logo" aria-label="TokenLite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    TokenLite
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="installation.html" class="md-nav__link md-nav__link--active">
+        Installation
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#unzip-the-application" class="md-nav__link">
+    Unzip the Application
+  </a>
+  
+    <nav class="md-nav" aria-label="Unzip the Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirement-of-installation" class="md-nav__link">
+    Requirement of Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wizard-installation-process" class="md-nav__link">
+    Wizard Installation Process
+  </a>
+  
+    <nav class="md-nav" aria-label="Wizard Installation Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-one-start-installation" class="md-nav__link">
+    Step One: Start Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-two-check-requirements" class="md-nav__link">
+    Step Two: Check Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-three-check-the-directory-permission" class="md-nav__link">
+    Step Three: Check the directory permission
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-four-setup-application" class="md-nav__link">
+    Step Four: Setup Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-four-setup-database" class="md-nav__link">
+    Step Four: Setup Database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-final-step" class="md-nav__link">
+    Last &amp; Final Step
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-installation-process" class="md-nav__link">
+    Manual Installation Process
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Installation Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-one-configure-env-file" class="md-nav__link">
+    Step One: Configure .ENV File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-two-installed-file-placement" class="md-nav__link">
+    Step Two: Installed File placement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-three-import-dummy-sql-file" class="md-nav__link">
+    Step Three: Import Dummy SQL File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-step" class="md-nav__link">
+    Final Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrator-account-setup" class="md-nav__link">
+    Administrator account setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot" class="md-nav__link">
+    Troubleshoot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="upgrade.html" class="md-nav__link">
+        Upgrade Option
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="admin.html" class="md-nav__link">
+        Admin Dashboard
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user.html" class="md-nav__link">
+        User Dashboard
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="branding.html" class="md-nav__link">
+        Branding Change
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="credit.html" class="md-nav__link">
+        Sources & Credits
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="troubleshooting.html" class="md-nav__link">
+        Troubleshooting
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="change-log.html" class="md-nav__link">
+        Change Log
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#unzip-the-application" class="md-nav__link">
+    Unzip the Application
+  </a>
+  
+    <nav class="md-nav" aria-label="Unzip the Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirement-of-installation" class="md-nav__link">
+    Requirement of Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wizard-installation-process" class="md-nav__link">
+    Wizard Installation Process
+  </a>
+  
+    <nav class="md-nav" aria-label="Wizard Installation Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-one-start-installation" class="md-nav__link">
+    Step One: Start Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-two-check-requirements" class="md-nav__link">
+    Step Two: Check Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-three-check-the-directory-permission" class="md-nav__link">
+    Step Three: Check the directory permission
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-four-setup-application" class="md-nav__link">
+    Step Four: Setup Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-four-setup-database" class="md-nav__link">
+    Step Four: Setup Database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-final-step" class="md-nav__link">
+    Last &amp; Final Step
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-installation-process" class="md-nav__link">
+    Manual Installation Process
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Installation Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-one-configure-env-file" class="md-nav__link">
+    Step One: Configure .ENV File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-two-installed-file-placement" class="md-nav__link">
+    Step Two: Installed File placement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-three-import-dummy-sql-file" class="md-nav__link">
+    Step Three: Import Dummy SQL File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-step" class="md-nav__link">
+    Final Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrator-account-setup" class="md-nav__link">
+    Administrator account setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot" class="md-nav__link">
+    Troubleshoot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Installation</h1>
+                
+                <h2 id="unzip-the-application">Unzip the Application</h2>
+<p>At first, after download the application, unzip the all files to your root folder, then move all files of <code>public</code> folder to your website <code>public_html</code> or <code>www</code> directory.</p>
+<h3 id="requirement-of-installation">Requirement of Installation</h3>
+<pre><code>    // FOLDER PLACEMENT //
+    |---root
+    |---|---tokenlite_app
+    |---|---public (or public_html)
+    |---|---|---index.php
+</code></pre>
+<blockquote>
+<p><strong>Please Note:</strong> <br>
+  Remember the <strong>'tokenlite_app'</strong> and <strong>'public'</strong> folder should be consider as siblings.</p>
+</blockquote>
+<pre><code>tokenlite_app/storage/framework/        # 775
+tokenlite_app/storage/logs/                  # 775
+tokenlite_app/storage/app/kyc-files/    # 775
+tokenlite_app/storage/app/public/       # 775
+tokenlite_app/bootstrap/cache/           # 775
+</code></pre>
+<blockquote>
+<p>You must set these folders <code>framework</code>, <code>logs</code>, <code>kyc-files</code>, <code>cache</code> permission to <code>775</code> as above. 
+Sometimes base on server permission <code>775</code> may not work, then you have to set <code>777</code></p>
+</blockquote>
+<p>Before start the installation process please fulfill the server requirements as bellow.</p>
+<pre><code>- PHP &gt;= 7.2.5 (support upto 7.4)
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+- BCMath PHP Extension
+- FileInfo PHP Extension
+</code></pre>
+<hr />
+<h2 id="wizard-installation-process">Wizard Installation Process</h2>
+<p>If you want to install the app using Web Installation then please full-fill the requirement of installation mentioned above. After that go to your website url.
+<code>https://your-domain.com/</code></p>
+<p><strong>If you face any problem in Wizard base installation,<br />
+Please check out our <a href="#manual-installation-process">Manual Installation process</a>.</strong></p>
+<h4 id="step-one-start-installation"><strong>Step One: Start Installation</strong></h4>
+<p>It's automatically redirect to you to the install page, then just click Check Requirements.
+<img alt="Step One" src="images/install/install-1.png" title="Step One" /></p>
+<h4 id="step-two-check-requirements"><strong>Step Two: Check Requirements</strong></h4>
+<p>if you see something is wrong then please fix this, then just reload the page.
+<img alt="Step Two" src="images/install/install-2.png" title="Step Two" /></p>
+<h4 id="step-three-check-the-directory-permission"><strong>Step Three: Check the directory permission</strong></h4>
+<p>If here you see something like this, then just fix the directory permission then reload this page.
+<img alt="Step Three" src="images/install/install-3.png" title="Step Three" />
+If your page look like this, then click <strong>Configure Environment</strong>
+<img alt="Step Three" src="images/install/install-4.png" title="Step Four" /></p>
+<h4 id="step-four-setup-application"><strong>Step Four: Setup Application</strong></h4>
+<ul>
+<li>Set your application name.</li>
+<li>Set Environment or ignore with default</li>
+<li>Set Debug or ignore with default</li>
+<li>Set Log level or ignore with default</li>
+<li>Set URL (Your Application URL)</li>
+<li>Set HTTPS true/false</li>
+</ul>
+<p><img alt="Step Five" src="images/install/install-5.png" title="Step Five" /></p>
+<h4 id="step-four-setup-database"><strong>Step Four: Setup Database</strong></h4>
+<p>In Database Setup page, set your database credentials.<br />
+- Set your database connection <code>type</code>, <code>host</code>, <code>port</code>, <code>db-name</code>, <code>db-username</code>, <code>db-user-password</code></p>
+<p><img alt="Step six" src="images/install/install-6.png" title="Step six" /></p>
+<p>If everything is fine then click to <strong>Install</strong> Button.
+Application should be start to install.</p>
+<h4 id="last-final-step"><strong>Last &amp; Final Step</strong></h4>
+<p>After complete the application install process then you will see the page like bellow.
+<img alt="Step Seven" src="images/install/install-7.png" title="Step Seven" /></p>
+<blockquote>
+<p>If you see the application is successfully installed, then click the Exit button, and you will finish the installation process. </p>
+<p>After installation complete, our application will redirect you to the registration page. Where you have to create your main administrative account.</p>
+</blockquote>
+<hr />
+<h2 id="manual-installation-process">Manual Installation Process</h2>
+<h4 id="step-one-configure-env-file"><strong>Step One: Configure .ENV File</strong></h4>
+<p>Please go to <code>tokenlite_app</code> folder and edit the <code>.env</code> file. On this file please use bellow code and update accordingly to your information and save the file.</p>
+<p><strong> Please you must change these value </strong> -<br />
+<code>APP_NAME</code>, <code>APP_URL</code>, <code>DB_HOST</code>, <code>DB_DATABASE</code>, <code>DB_USERNAME</code>, <code>DB_PASSWORD</code></p>
+<pre><code>APP_NAME='YOUR_APP_NAME_HERE'
+APP_VERSION='1.0.0'
+APP_ENV=production
+APP_KEY=base64:bMzV/BygkgeonjHpn5c7NkwcAi8ckl+tBIEfNfOqgmw=
+APP_DEBUG=false
+APP_LOG_LEVEL=debug
+APP_URL=http://yourdomainname.com
+
+FORCE_HTTPS=false
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_db_name
+DB_USERNAME=your_db_user_name
+DB_PASSWORD=your_db_password
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+</code></pre>
+<h4 id="step-two-installed-file-placement"><strong>Step Two: Installed File placement</strong></h4>
+<p>Please copy the <code>installed</code> file (found under <code>manual-install-files</code> folder) and placed into <code>tokenlite_app/storage</code> folder.</p>
+<h4 id="step-three-import-dummy-sql-file"><strong>Step Three: Import Dummy SQL File</strong></h4>
+<p>Please import the sql file <code>dummy_app.sql</code> into your database.<br />
+File found under <code>manual-install-files</code> folder. </p>
+<h4 id="final-step"><strong>Final Step</strong></h4>
+<p>Once above step are complete please go to your website url.
+<code>https://your-domain.com/</code> &amp; register first your <strong>Super Admin</strong> account. Then login to your account and configure the Website settings, Email settings, Payment settings and ICO Stages etc.  </p>
+<blockquote>
+<p>Note: First registered user will be always super-admin privilege.</p>
+</blockquote>
+<hr />
+<h3 id="administrator-account-setup">Administrator account setup</h3>
+<p>If everything is working correctly then site will redirect to registration page.</p>
+<p>Here you have to Register as  <strong>Super Admin</strong>.
+<img alt="Register" src="images/install/install-8.png" title="Register" /></p>
+<h3 id="troubleshoot">Troubleshoot</h3>
+<blockquote>
+<p>After installation complete, if you see something is wrong or you want to re-install the application again, then follow bellow instruction.<br />
+you may just remove this file, <code>storage/installed</code>. and drop all database table or provide new db.
+then go to your website URL, you will be redirect to the installation page.</p>
+</blockquote>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="upgrade.html" class="md-footer__link md-footer__link--next" aria-label="Next: Upgrade Option" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Upgrade Option
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Application by Softnio
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>

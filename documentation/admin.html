@@ -1,0 +1,897 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TokenLite Documentation">
+      
+      
+      
+        <meta name="author" content="Softnio">
+      
+      
+        <link rel="canonical" href="https://docs.tokenlite.net/admin.html">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Admin Dashboard - TokenLite</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/custom.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-dashboard" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="TokenLite" class="md-header__button md-logo" aria-label="TokenLite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TokenLite
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Admin Dashboard
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="TokenLite" class="md-nav__button md-logo" aria-label="TokenLite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    TokenLite
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation.html" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="upgrade.html" class="md-nav__link">
+        Upgrade Option
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Admin Dashboard
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="admin.html" class="md-nav__link md-nav__link--active">
+        Admin Dashboard
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-dashboard" class="md-nav__link">
+    The Dashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#website-setting" class="md-nav__link">
+    Website setting.
+  </a>
+  
+    <nav class="md-nav" aria-label="Website setting.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#site-settings" class="md-nav__link">
+    Site Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-settings" class="md-nav__link">
+    General Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-social-links" class="md-nav__link">
+    Site Social Links
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-api-credentials" class="md-nav__link">
+    Site API Credentials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-setup" class="md-nav__link">
+    Email Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Email Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-email-template" class="md-nav__link">
+    Edit Email template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payment-setup" class="md-nav__link">
+    Payment Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Payment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-payment-gateway" class="md-nav__link">
+    Manual Payment Gateway
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manage-currency-rate" class="md-nav__link">
+    Manage currency Rate
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pages-setting" class="md-nav__link">
+    Pages Setting
+  </a>
+  
+    <nav class="md-nav" aria-label="Pages Setting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customize-the-pages" class="md-nav__link">
+    Customize the pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ico-setting" class="md-nav__link">
+    ICO Setting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-setup" class="md-nav__link">
+    Stage Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-stages" class="md-nav__link">
+    All Stages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-details" class="md-nav__link">
+    Stage Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-stage" class="md-nav__link">
+    Edit Stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-stage-prices-tire" class="md-nav__link">
+    Edit Stage Prices Tire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-the-bonus-option" class="md-nav__link">
+    Edit the Bonus Option
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#everything-is-done" class="md-nav__link">
+    Everything is done
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user.html" class="md-nav__link">
+        User Dashboard
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="branding.html" class="md-nav__link">
+        Branding Change
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="credit.html" class="md-nav__link">
+        Sources & Credits
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="troubleshooting.html" class="md-nav__link">
+        Troubleshooting
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="change-log.html" class="md-nav__link">
+        Change Log
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-dashboard" class="md-nav__link">
+    The Dashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#website-setting" class="md-nav__link">
+    Website setting.
+  </a>
+  
+    <nav class="md-nav" aria-label="Website setting.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#site-settings" class="md-nav__link">
+    Site Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-settings" class="md-nav__link">
+    General Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-social-links" class="md-nav__link">
+    Site Social Links
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-api-credentials" class="md-nav__link">
+    Site API Credentials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-setup" class="md-nav__link">
+    Email Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Email Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-email-template" class="md-nav__link">
+    Edit Email template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payment-setup" class="md-nav__link">
+    Payment Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Payment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-payment-gateway" class="md-nav__link">
+    Manual Payment Gateway
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manage-currency-rate" class="md-nav__link">
+    Manage currency Rate
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pages-setting" class="md-nav__link">
+    Pages Setting
+  </a>
+  
+    <nav class="md-nav" aria-label="Pages Setting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customize-the-pages" class="md-nav__link">
+    Customize the pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ico-setting" class="md-nav__link">
+    ICO Setting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-setup" class="md-nav__link">
+    Stage Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-stages" class="md-nav__link">
+    All Stages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-details" class="md-nav__link">
+    Stage Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-stage" class="md-nav__link">
+    Edit Stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-stage-prices-tire" class="md-nav__link">
+    Edit Stage Prices Tire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-the-bonus-option" class="md-nav__link">
+    Edit the Bonus Option
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#everything-is-done" class="md-nav__link">
+    Everything is done
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Admin Dashboard</h1>
+                
+                <h2 id="the-dashboard"><strong>The Dashboard</strong></h2>
+<p>After login, you will see the Admin dashboard.</p>
+<p><img alt="dashboard" src="images/admin/dashboard.png" title="dashboard" /></p>
+<h2 id="website-setting"><em>Website setting.</em></h2>
+<p>Here set your website details, social links and Most probably <strong>API</strong>(facebook and google for social login) setup.
+The API used for social login, after you setup the api you will see the <strong>Social login</strong> Button in Login and Register page.</p>
+<p>if you set it blank the Social button is not showing in those pages.</p>
+<h3 id="site-settings"><strong>Site Settings</strong></h3>
+<p><img alt="Website setting" src="images/admin/settings.png" title="Website setting" /></p>
+<h3 id="general-settings"><strong>General Settings</strong></h3>
+<p>Set your Timezone, Date/Time format, Homepage URL. In this section you can enable maintenance mode while your site is upgrading.
+<img alt="General setting" src="images/admin/settings-general.png" title="General setting" /></p>
+<h3 id="site-social-links"><strong>Site Social Links</strong></h3>
+<p>This social link will appare in your site footer.
+<img alt="Website setting" src="images/admin/settings-social-links.png" title="Website setting" /></p>
+<h3 id="site-api-credentials"><strong>Site API Credentials</strong></h3>
+<p><img alt="Website setting" src="images/admin/settings-api.png" title="Website setting" /><br />
+Get Facebook API from <a href="https://developers.facebook.com/apps">here</a> by creating an App and use Facebook Login product.<br />
+Get Google API from <a href="https://console.developers.google.com">here</a> use Google+ for API</p>
+<hr />
+<h2 id="email-setup">Email Setup</h2>
+<p>Set Email Credentials &amp; Info<br />
+From the top of the menu click Manage and go to mailing settings.</p>
+<p><img alt="Edit Email settings" src="images/admin/mail-settings.png" title="Edit Email settings" /> <br>
+in the form set your email host, port, username, password, encryption type, and email info From Address and From name (It's will show as email from).</p>
+<h3 id="edit-email-template">Edit Email template</h3>
+<p>In the email setting page you see here is some email templates we are included for the application, you can change the email template static text etc.</p>
+<p><img alt="Email template" src="images/admin/mail-template.png" title="Email template" /> <br>
+-click the edit icon button in the right side of item.<br />
+-Edit Email template modal will be open.  </p>
+<p><strong>NB</strong>: Remember! <strong>[[___]]</strong> is short-code do not change or remove this, unless the email template is not working properly.<br />
+In this template we are used the Laravel markdown format so if you use markdown syntax sometime it's break the design.<br />
+Template greeting is a hello/hi text beginning the email and regards is in footer.</p>
+<hr />
+<h2 id="payment-setup">Payment Setup</h2>
+<blockquote>
+<p>Currently you can setup only manual payments, Manual(ETH, BTC, LTC) and Bank payment for USD.</p>
+</blockquote>
+<h3 id="manual-payment-gateway">Manual Payment Gateway</h3>
+<p>From the top menu click Manage then payment setup...
+You will see the below page ...</p>
+<p><img alt="Manual" src="images/admin/payment-methods.png" title="Payment" /></p>
+<p>Here you have to active at least one payment method to active your token sale. If you want to active manual payment gateway then enable the Active or Deactive switch. After enable the manual option then active your payment method, like Ethereum, Litecoin, Bitcoin.</p>
+<p><strong>NB:</strong> Remember! Manual payment only for Crypt currencies.  </p>
+<p>Ok, here set your Wallet address for payment. 
+From the bottom of this page you can add your bank credential for active bank payment for USD currency.</p>
+<h3 id="manage-currency-rate">Manage currency Rate</h3>
+<p>From the payment setting page click <strong>Manage</strong> button. You will see a popup like below image. Here you can set the currency rate manually or Automatically. If you select Automatic then the currency will update from <strong>"cryptocompare"</strong> after the given interval. </p>
+<p><img alt="currency_rate" src="images/admin/manage-currency.png" title="Currency" /></p>
+<hr />
+<h2 id="pages-setting">Pages Setting</h2>
+<h3 id="customize-the-pages">Customize the pages</h3>
+<p>Click the Manage button from top of the menu and go to page setting.
+Some of our built in page you can just edit, like privacy and policy, Terms and policy etc. Also you can able to upload white paper from here.  </p>
+<p><img alt="Page" src="images/admin/pages.png" title="Page" /></p>
+<p>If you want to edit any page then click the edit button beside the page item.  </p>
+<p>You will view/edit the page by clicking edit icon button,  </p>
+<p><img alt="Edit Page" src="images/admin/page-edit.png" title="Edit Page" /> </p>
+<p>Here you can set the page title and page content. You can add custom slug which will show in browser url.</p>
+<hr />
+<h3 id="ico-setting">ICO Setting</h3>
+<p>From the navigation menu select Manage the click ICO setting. Then you will see the stage Setting details.</p>
+<p><img alt="Stage Settings" src="images/admin/stage-settings.png" title="Stage Settings" /></p>
+<h2 id="stage-setup">Stage Setup</h2>
+<p>In the navigation menu.<br />
+Click to ICO Stages</p>
+<h3 id="all-stages">All Stages</h3>
+<p><img alt="Stage Menu" src="images/admin/stages.png" title="Stage Menu" />  </p>
+<h3 id="stage-details">Stage Details</h3>
+<p><img alt="Stage Menu" src="images/admin/stage-details.png" title="Stage Menu" /></p>
+<h3 id="edit-stage">Edit Stage</h3>
+<p>To edit any stage select the stage from drop-down.<br />
+Then you will see the stage details, stage price &amp; stage bonus option in the stage page.
+to edit the stage details then make change  in the stage details form.
+then click to <strong>Update Stage</strong>.  </p>
+<h3 id="edit-stage-prices-tire">Edit Stage Prices Tire</h3>
+<p>The Price tire options is look like this.<br />
+<img alt="Stage Price" src="images/admin/stage-price.png" title="Stage Price" /></p>
+<h3 id="edit-the-bonus-option">Edit the Bonus Option</h3>
+<p>Here is two types of bonus available.<br />
+First is base bonus, this bonus is always active if you set any amount. </p>
+<p>And the Second bonus option is Amount bonus, when user contribute amount is equal or greater then the amount token then user get a bonus percentage of his total tokens.</p>
+<p><img alt="Stage Bonus" src="images/admin/stage-bonus.png" title="Stage Bonus" /></p>
+<h2 id="everything-is-done">Everything is done</h2>
+<p>Your application is ready.<br />
+If you have facing any problem then see the Common Troubleshoot page.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="upgrade.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Upgrade Option" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Upgrade Option
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="user.html" class="md-footer__link md-footer__link--next" aria-label="Next: User Dashboard" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              User Dashboard
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Application by Softnio
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>
